@@ -1,0 +1,97 @@
+
+body{
+    height: 100%;
+    font-family: 'Athiti', sans-serif;
+    margin:0;
+    padding:0;
+    background-color: var(--darkmode-background-color);
+
+}
+
+
+:root {
+    /***Darkmode ***/
+    --darkmode-background-color:#161b22;
+    --darkmode-text-color-icons : #f0f6fc;
+    --darkmode-color-buttons-links :#28a745;
+    --darkmode-hyper-links : #0366d6;
+    --darkmode-secondary-buttons :#6f42c1;
+    --border-raduis :.2rem;
+
+    /***Lightmode **/
+    --lightmode-background-color:#ffff;
+    --lightmode-text-color-icons : #24292e;
+    --lightmode-color-buttons-links :#28a745;
+    --lightmode-hyper-links : #0366d6;
+    --lightmode-secondary-buttons :#6f42c1;
+
+}
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--darkmode-background-color);
+    color: var(--darkmode-text-color-icons);
+    height :60vh;
+
+}
+
+h1{
+    font-size: 2rem;
+   
+}
+
+article:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/**Name and profile*/
+div:nth-of-type(1){
+    display: flex;
+    flex-direction: column-reverse;
+
+   
+}
+
+/** Profile**/
+ header img:nth-of-type(1){
+    width:10em;
+    border-radius: 50%;
+    border:2px solid white;
+
+    
+ }
+
+/***8descriotion box */
+ div:nth-of-type(2){
+    width: 10em;
+    height: 5em;
+    border-radius: var(--border-raduis);
+    border:1px solid white;
+    
+ }
+
+
+@media (min-width:4em){
+    header{
+       
+        
+    }
+
+
+}
+
+
+
+
+
+
+
