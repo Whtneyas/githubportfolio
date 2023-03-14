@@ -47,6 +47,12 @@ In my drawings i also made a breakdown sketch to make it more easy for me to bui
 [] 
 
 
+## Resources 
+  - https://openai.com/blog/chatgpt
+  - https://stackoverflow.com/
+  - 
+
+
 
 
 
