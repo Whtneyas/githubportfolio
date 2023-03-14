@@ -44,7 +44,17 @@ In my drawings i also made a breakdown sketch to make it more easy for me to bui
 
 ## Wistlist
 
-[] 
+[] Animation text 
+[] Animation
+[] Routing 
+[] scroll snap 
+[] search bar 
+[] Fetch github api 
+[] Clean code
+[] Well documented project 
+
+
+
 
 
 
