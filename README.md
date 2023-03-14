@@ -25,7 +25,7 @@ My idea is very simple. The portfolio begins with a landing page that welcomes t
 
 In my drawings i also made a breakdown sketch to make it more easy for me to build this project.
 
-image.png
+![Sketckes](./images/sketches.jpeg)
 
 
 
