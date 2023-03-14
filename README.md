@@ -44,7 +44,7 @@ In my drawings i also made a breakdown sketch to make it more easy for me to bui
 
 ## Wistlist
 
-[-] Animation text 
+[X] Animation text 
 [] Animation
 [] Routing 
 [] scroll snap 
