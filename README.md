@@ -16,6 +16,20 @@ This project has been assigned to us by the school with the objective of creatin
 - Document features, functionalities, and technical aspects of the application.
 
 
+## Ideas and drawings
+My idea is very simple. The portfolio begins with a landing page that welcomes the user or viewer to the page. On the same page the user gets directed with an arrow facing down to projects made by me in github.The user can navigate through the menu. The menu contains, my overview, starred projects , achievements and repositories. The footer will display my social media handles. 
+
+
+
+**Breakdown Sketch**
+
+In my drawings i also made a breakdown sketch to make it more easy for me to build this project.
+
+image.png
+
+
+
+
 ## Features
 - Displays starred projects 
 - Displays the overview of projects 
