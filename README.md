@@ -44,14 +44,8 @@ In my drawings i also made a breakdown sketch to make it more easy for me to bui
 
 ## Wistlist
 
-## New things i tried. 
- 
- **Routie**
+[] 
 
- During wafs(web app from scratch ), i created my own routing which was nice to do and learn. I realised that there is a library called routie which can be used for routing. Since i wanted to try something new. I decided to hop on that. 
-
-  ### What is routie?
-  Routie is a small and easy-to-use JavaScript library that allows developers to create client-side routers for web applications, enabling them to define routes for different URLs and map them to specific actions or functions.
 
 
   **Implemention**
