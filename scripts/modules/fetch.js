@@ -21,6 +21,10 @@
  // fetchRepos();
 
 
+ 
+
+
+
  export async function getUserInfo() {
      const url = 'https://api.github.com/users/whtneyas';
      let data;
@@ -59,5 +63,3 @@
         console.error('Error fetching data:');
      }
  }
-
-//  getrepodata("blok-tech")

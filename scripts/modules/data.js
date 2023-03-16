@@ -1,13 +1,41 @@
 import {
     fetchRepos,
-    getrepodata
+    getrepodata,
+    getUserInfo
 } from './fetch.js'
 
+
 const article = document.querySelector('main article:first-of-type');
+const header = document.querySelector("header")
+
+
+// export function displayUserInfo(user) {
+//     let userHtml = ``
+//     userHtml = `
+//     <article>
+//         <div>
+//             <h2>${user.name}</h2>
+//             <img src="images/avatar.jpeg" alt="">
+//         </div>
+
+//         <!--Description box-->
+//         <div>
+//             <p></p>
+//         </div>
+
+//         <!--Arrow facind down-->
+//         <div class="arrow-down">
+//             <div class="arrow-down">
+//             </div>
+//         </div>
+
+//     </article>`;
+
+//     header.insertAdjacentHTML('beforeend', getUserInfo)
+// }
 
 export async function reposData() {
     console.log("HI overview");
-
     const data = await fetchRepos();
     const repoNames = data.map(item => item.name);
     const ulElement = document.createElement('ul');
@@ -18,11 +46,17 @@ export async function reposData() {
             console.log(repoName, repodata);
 
             const liElement = document.createElement('li');
-            liElement.innerHTML=
-            `
+            liElement.innerHTML =
+                `
             <h3>${repodata.name}</h3>
-            <p>${repodata.name}</p>
-            <iframe src="${repodata.homepage}" frameborder="0" scrolling="no"></iframe>
+            <p>${repodata.description}</p>  
+
+            <div class="tags">
+               <p><a href="${repodata.homepage}">Demo</a></p>
+               <p>${repodata.language}</p>
+            <div>            
+        
+         
             `;
             ulElement.appendChild(liElement);
 
@@ -31,8 +65,7 @@ export async function reposData() {
         }
     };
 
-    console.log(ulElement);
-
+    // console.log(ulElement);
 
     article.appendChild(ulElement);
 
@@ -42,40 +75,7 @@ export async function reposData() {
 reposData();
 
 
+{
+    /*  */
+}
 
-
-// const repoDescription = data.map(item => item.description);
-// const repoDemo = data.map(item => item.homepage);
-// const repoLanguage = data.map(item => item.language);
-// console.log(repoDemo);
-
-// const array = repoNames.map((item, index) => {
-//     return {
-//         "name": repoNames[index],
-//         "description": repoDescription[index],
-//         "homepage": repoDemo[index],
-//         "language": repoLanguage[index]
-
-//     }
-// })
-
-// console.log("mijn array", array)
-
-// const sectionElement = document.createElement('section');
-// const ulnames = document.createElement('ul');
-
-
-// repoNames.forEach((reponame) => {
-//     const liElement = document.createElement('li');
-//     const h3Element = document.createElement('h3');
-//     const pElement = document.createElement('p')
-//     const container = document.createElement('ul')
-//     const containerLi = document.createElement('li')
-
-//     h3Element.innerText = `${reponame}`
-//     liElement.appendChild(h3Element);
-//     ulnames.appendChild(liElement);
-//     return ulnames;
-// });
-
-// sectionElement.appendChild(ulnames);
