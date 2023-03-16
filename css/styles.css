@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: var(--darkmode-background-color);
     color: var(--darkmode-text-color-icons);
+    font-family: ;
 
 }
 
@@ -49,7 +50,6 @@ header {
     color: var(--darkmode-text-color-icons);
     height: 70vh;
     
-    
 
 
 }
@@ -63,11 +63,54 @@ body:has(#light-mode:checked) header {
 body:has(#light-mode:checked) {
     background-color: var(--lightmode-background-color);
 }
-
+/* 
 input {
     width: 2em;
     height: 2em;
-}
+} */
+
+
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 4em;
+    height: 30px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+  }
+  
+  label:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 1.5em;
+    height: 1.7em;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  
+  input:checked + label {
+    background: var(--darkmode-background-color);
+  }
+  
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    transition: 2s;
+  }
+
+
 
 h1 {
   
@@ -226,9 +269,6 @@ main article:nth-of-type(1) li h3 p {
 }
 
 
-.tags {
-   
-}
 
 
 .tags p:nth-of-type(1) a {
@@ -284,10 +324,6 @@ main article:nth-of-type(1) li h3 p {
     }
 
 
-    header img:nth-of-type(1) {
-
-      
-    }
 
 
     .arrow-down {
